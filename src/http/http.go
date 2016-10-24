@@ -23,7 +23,7 @@ func main() {
 	// 你好
 	// test hBttpclient
 	fmt.Println("test")
-	resp, err := http.Get("http://localhost:8080/TencentOpen/pay.jsp?billno=fffff&openid=abc&payitem=1*100*1&amt=100")
+	resp, err := http.Get("http://www.163.com")
 	if err != nil {
 		fmt.Println(err.Error())
 		return
