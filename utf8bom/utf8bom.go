@@ -13,6 +13,7 @@ func main() {
 	// }
 	userFile := flag.Arg(0)
 	if userFile == "" {
+		fmt.Println("arg error")
 		return
 	}
 
@@ -33,11 +34,9 @@ func main() {
 	}
 	fin.Close()
 
-	fout, err := os.Create(userFile)
-	defer fout.Close()
 	if buf[0] == 0xef {
+		fout, _ := os.Create(userFile)
+		defer fout.Close()
 		fout.Write(buf[3:])
-	} else {
-		fout.Write(buf[:])
 	}
 }

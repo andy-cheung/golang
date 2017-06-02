@@ -2,3 +2,5 @@
 *.dll
 /.idea
 /cgo/libgcc.a
+/utf8bom/debug
+/libgcc.a
