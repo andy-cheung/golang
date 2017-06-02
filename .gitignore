@@ -1,3 +1,4 @@
 *.o
 *.dll
 /.idea
+/cgo/libgcc.a
