@@ -4,3 +4,6 @@
 /cgo/libgcc.a
 /utf8bom/debug
 /libgcc.a
+res/debug
+res/icon_zhoujijin.png
+res/pic_line.png
